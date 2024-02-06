@@ -13,8 +13,10 @@
     <nav>
         <ul>
             <li><a href="/info">Info</a></li>
+            <!--
             <li><a href="/meedoen">Ik wil meedoen</a></li>
             <li><a href="/aandragen">Ik weet een leuk nummer</a></li>
+            -->
         </ul>
         
     </nav>
@@ -23,18 +25,22 @@
 <slot />
 
 <style>
+    
     header {
         text-align: center;
+        background-color: black;
+        color: white;
     }
     nav ul {
         display: flex;
         flex-wrap: wrap;
         list-style-type: none;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     a {
-        text-decoration: none;;
+        text-decoration: none;
+        color: white;
     }
     
     
