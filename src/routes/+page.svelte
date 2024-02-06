@@ -1,5 +1,5 @@
 <script>
-    import {setlist} from '../../data.js';
+    import {setlist} from '$lib/data.js';
     
 </script>
 

@@ -1,11 +1,12 @@
 <script>
+    import {setlist} from '$lib/data.js';
     const allowedNames = [
         'raynauld',
         'jur',
         'david',
         'peter'
     ]
-    $: loggedIn = '';
+    $: loggedIn = 'jur';
     $: name = '';
     function handleSubmit(event) {
         event.preventDefault();
@@ -28,7 +29,9 @@
         <button type='submit'>Let's go!</button>
     </form>
 {:else}
-    <h2>logged in</h2>
+    <h2>Hello {name}</h2>
+    <a href="huisband/deleteSong">Verwijder nummer</a>
+    <a href="huisband/addSong">Voeg nummer toe</a>
 {/if}
 
 <style>
